@@ -4,7 +4,6 @@ import { Spin } from 'antd';
 const Product = (props) => {
   return (
     <div className="products">
-        <Spin spinning={props.loading}>
         {props.products.length > 0 ? props.products.map((product) => {
             return (
                 <div className='product-card'>
@@ -15,9 +14,10 @@ const Product = (props) => {
                 </div>
             )
         }) : 
-            <p>No Products Found!</p>
+            <Spin spinning={props.loading}>
+                <p>No Products Found!</p>
+            </Spin>
         }
-        </Spin>
     </div>
   )
 }
