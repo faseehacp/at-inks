@@ -1,0 +1,594 @@
+.home {
+    width: 100%;
+    float: left;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.header {
+    width: 80%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #2b2a29;
+    -webkit-clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+    clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+    z-index: 1;
+}
+
+ul.header-menu {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65px;
+}
+
+.header-menu li {
+    float: left;
+    font-size: 18px;
+    color: #f1f1f1;
+    padding: 0px 10px;
+}
+
+.main {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.banner-section {
+    width: 100%;
+    float: left;
+    background-image: url(../../assets/banner-img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.inner-banner-section {
+    width: 100%;
+    float: left;
+    background-image: url(../../assets/banner-img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page-404 {
+    height: 100vh;
+}
+
+.logo {
+    width: 100%;
+    float: left;
+    margin-top: 65px;
+    padding: 35px 0;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+
+.banner-header {
+    width: 100%;
+    float: left;
+}
+
+.banner-header-contents {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-header-contents {
+    display: none;
+}
+
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu svg {
+    fill: #fff;
+}
+
+.filter select {
+    border: none;
+    background-color: #2b2a29;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter select option {
+    background-color: #fff;
+    color: #2b2a29;
+}
+
+.searchbar {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.searchbar form {
+    width: 100%;
+    position: relative;
+}
+
+.searchbar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.searchbar button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background-color: #f26522;
+    padding: 0 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.language button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+button svg {
+    padding: 0 10px;
+}
+
+.cart button  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner-slider {
+    width: 100%;
+    float: left;
+    padding: 100px 0 25px;
+}
+
+.banner-slider h2, .inner-banner-section h2 {
+    font-size: 60px;
+    line-height: 80px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.inner-banner-section h2 {
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.page-404 h2 {
+    margin-top: 45vh;
+    margin-bottom: 45vh;
+}
+
+.banner-slider button {
+    border: none;
+    background-color: #2b2a29;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+ul.control-dots {
+    display: none !important;
+}
+
+p.carousel-status {
+    display: none !important;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background: transparent !important;
+}
+
+.products-section, .content-section {
+    width: 100%;
+    float: left;
+    margin: 30px 0 65px;
+}
+
+.products-section h2, .content-section h2 {
+    font-size: 40px;
+    color: #30302e;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.products-section p, .content-section p {
+    font-size: 25px;
+    color: #30302e;
+    text-align: justify;
+}
+
+.products-section p {
+    width: 100%;
+}
+
+.products {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    flex-basis: 30%;
+    padding: 25px 40px;
+    box-shadow: 0 0px 20px rgb(0 0 0 / 6%);
+    box-sizing: border-box;
+    margin: 25px 1.5%;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #30302e;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.product-card p {
+    width: 100%;
+    font-size: 16px;
+    color: #f26522;
+    text-align: center;
+    margin: 0px;
+}
+
+.product-card p span {
+    color: #262626;
+}
+
+.product-card img {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+    max-height: 450px;
+    min-height: 450px;
+}
+
+@media screen and (max-width: 1440px) {
+    .header-menu li {
+        font-size: 15px;
+    }
+
+    .banner-slider {
+        padding: 80px 0 25px;
+    }
+
+    .banner-slider h2, .inner-banner-section h2 {
+        font-size: 58px;
+        line-height: 76px;
+    }
+
+    .product-card img {
+        max-height: 350px;
+        min-height: 350px;
+    }
+
+    .logo {
+        padding: 20px 0;
+    }
+
+    .products-section p, .content-section p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1201px) {
+    ul.header-menu {
+        height: 55px;
+    }
+
+    .logo {
+        margin-top: 55px;
+    }
+
+    .banner-slider h2, .inner-banner-section h2 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .banner-slider {
+        padding: 50px 0 25px;
+    }
+    
+    .product-card img {
+        max-height: 250px;
+        min-height: 250px;
+    }
+
+    .products-section h2, .content-section h2 {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .product-card h3 {
+        font-size: 17px;
+    }
+
+    .product-card p, .products-section p, .content-section p {
+        font-size: 14px;
+    }
+
+    .header-menu li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .searchbar {
+        width: 33%;
+    }
+
+    .searchbar button {
+        padding: 0;
+    }
+
+    .filter select {
+        padding: 7px 10px;
+    }
+
+    .banner-slider h2, .inner-banner-section h2 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .banner-slider {
+        padding: 25px 0;
+    }
+
+    .products-section h2, .content-section h2 {
+        font-size: 25px;
+    }
+
+    .products-section, .content-section {
+        margin: 20px 0 65px;
+    }
+
+    .product-card img {
+        max-height: 200px;
+        min-height: 200px;
+        margin: 20px 0px;
+    }
+
+    .product-card h3 {
+        font-size: 13px;
+    }
+
+    .product-card p, .products-section p, .content-section p {
+        font-size: 12px;
+    }
+
+    ul.header-menu {
+        width: 75%;
+    }
+
+    .banner-header-contents div {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-header-contents {
+        display: none;
+    }
+
+    .mobile-header-contents {
+        display: block;
+    }
+
+    .mobile-header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .mobile-header-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .searchbar {
+        width: 90%;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .logo {
+        margin-top: 0;
+        padding: 15px 0;
+    }
+
+    .banner-slider h2, .inner-banner-section h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .banner-slider button {
+        font-size: 11px;
+        padding: 7px 20px;
+    }
+
+    .product-card {
+        flex-basis: 47%;
+    }
+
+    .product-card img {
+        max-height: 300px;
+        min-height: 300px;
+    }
+
+    .product-card h3 {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .product-card p, .products-section p, .content-section p {
+        font-size: 13px;
+    }
+
+    .logo {
+        padding: 10px 0;
+    }
+
+    .logo img {
+        height: 25px;
+    }
+
+    .filter select {
+        padding: 3px 10px;
+    }
+
+    .language button {
+        padding: 6px 10px;
+    }
+
+    .searchbar input {
+        padding: 7px 10px;
+    }
+
+    .hamburger-menu svg {
+        height: 35px;
+        width: 35px;
+    }
+
+    .banner-slider {
+        padding: 15px 0;
+    }
+
+    .banner-slider h2, .inner-banner-section h2 {
+        margin-bottom: 5px;
+    }
+
+    .searchbar button {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner-section {
+        background-size: 150%;
+    }
+
+    .products-section, .content-section {
+        margin: 20px 0;
+    }
+
+    .products-section h2, .content-section h2 {
+        font-size: 20px;
+    }
+
+    .product-card {
+        flex-basis: 97%;
+    }
+
+    .product-card img {
+        max-height: 630px;
+        min-height: unset;
+    }    
+
+    .language {
+        display: none;
+    }
+
+    .banner-slider h2, .inner-banner-section h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .banner-slider button {
+        padding: 5px 17px;
+    }
+
+    .searchbar {
+        width: 85%;
+    }
+
+    .products-section h2, .content-section h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner-slider h2, .inner-banner-section h2 {
+        font-size: 16px;
+        line-height: 26px;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .banner-slider button {
+        font-size: 10px;
+    }
+
+    .filter select {
+        font-size: 10px;
+    }
+}
