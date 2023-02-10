@@ -463,6 +463,10 @@ p.carousel-status {
 }
 
 @media screen and (max-width: 768px) {
+    .cart button {
+        font-weight: bold;
+    }
+
     .banner-header-contents {
         display: none;
     }
