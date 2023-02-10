@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/eflyer/static/css/main.800fabce.css",
-    "main.js": "/eflyer/static/js/main.2891b774.js",
+    "main.css": "/eflyer/static/css/main.598b49d1.css",
+    "main.js": "/eflyer/static/js/main.8302c762.js",
     "static/media/banner-img.png": "/eflyer/static/media/banner-img.3887244a542b54fb6d72.png",
     "index.html": "/eflyer/index.html",
-    "main.800fabce.css.map": "/eflyer/static/css/main.800fabce.css.map",
-    "main.2891b774.js.map": "/eflyer/static/js/main.2891b774.js.map"
+    "main.598b49d1.css.map": "/eflyer/static/css/main.598b49d1.css.map",
+    "main.8302c762.js.map": "/eflyer/static/js/main.8302c762.js.map"
   },
   "entrypoints": [
-    "static/css/main.800fabce.css",
-    "static/js/main.2891b774.js"
+    "static/css/main.598b49d1.css",
+    "static/js/main.8302c762.js"
   ]
 }
