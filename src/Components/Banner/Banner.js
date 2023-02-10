@@ -5,10 +5,41 @@ import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 
 const Banner = (props) => {
-    console.log(props.categories);
+  const openSidenavHandler = () => {
+    document.getElementById('sidenav').style.transform = "translateX(0%)";
+    document.getElementById('sidenav').style.opacity = "1";
+    document.getElementById('sidenav').style.transition = "transform 100ms ease-in-out, opacity 200ms";
+  }
+
+  const closeSidenavHandler = () => {
+    document.getElementById('sidenav').style.transform = "translateX(-100%)";
+    document.getElementById('sidenav').style.opacity = "0";
+    document.getElementById('sidenav').style.transition = "transform 100ms ease-in-out, opacity 200ms";
+  }
+     
   return (
     <React.Fragment>
-        <div className="banner-section">
+      <div className="banner-section">
+        <div id="sidenav">
+          <svg width="18" height="18" viewBox="0 0 24 24" onClick={closeSidenavHandler}><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg>
+          <ul className="sidenav-menu">
+            <li>
+                <Link to="/best-sellers">Best Sellers</Link>
+            </li>
+            <li>
+                <Link to="/gift-ideas">Gift Ideas</Link>
+            </li>
+            <li>
+                <Link to="/new-releases">New Releases</Link>
+            </li>
+            <li>
+                <Link to="/todays-deals">Today's Deals</Link>
+            </li>
+            <li>
+                <Link to="/customer-service">Customer Service</Link>
+            </li>
+          </ul>
+        </div>
         <div className="logo">
           <Link to="/eflyer">
             <img src={logo} alt="logo" />
@@ -17,7 +48,7 @@ const Banner = (props) => {
         <div className="banner-header">
           <div className="container">
             <div className="banner-header-contents">
-              <div className="hamburger-menu">
+              <div className="hamburger-menu" onClick={openSidenavHandler}>
                 <svg width="40" height="40" viewBox="0 0 24 24">
                   <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
                 </svg>
@@ -93,7 +124,7 @@ const Banner = (props) => {
                 </div>
               </div>
               <div className="mobile-header-bottom">
-                <div className="hamburger-menu">
+                <div className="hamburger-menu" onClick={openSidenavHandler}>
                   <svg width="40" height="40" viewBox="0 0 24 24">
                     <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
                   </svg>

@@ -59,6 +59,7 @@ ul.header-menu {
     background-position: top center;
     box-sizing: border-box;
     text-align: center;
+    position: relative;
 }
 
 .inner-banner-section {
@@ -70,10 +71,39 @@ ul.header-menu {
     background-position: center center;
     box-sizing: border-box;
     text-align: center;
+    position: relative;
 }
 
 .page-404 {
     height: 100vh;
+}
+
+#sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 30px 50px 30px 30px;
+    background-color: #2b2a29;
+    text-align: right;
+    z-index: 9;
+    transform: translateX(-100%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+    opacity: 0;
+}
+
+div#sidenav svg {
+    fill: #fff;
+}
+
+ul.sidenav-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+ul.sidenav-menu li {
+    padding: 10px;
 }
 
 .logo {
@@ -252,6 +282,7 @@ p.carousel-status {
 
 .products-section p {
     width: 100%;
+    text-align: center;
 }
 
 .products {
