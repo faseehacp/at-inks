@@ -10,7 +10,7 @@ const Banner = (props) => {
     <React.Fragment>
         <div className="banner-section">
         <div className="logo">
-          <Link to="/">
+          <Link to="/eflyer">
             <img src={logo} alt="logo" />
           </Link>
         </div>

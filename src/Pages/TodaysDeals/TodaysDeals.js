@@ -9,7 +9,7 @@ const TodaysDeals = () => {
         <Header />
         <div className="inner-banner-section">
             <div className="logo">
-                <Link to="/">
+                <Link to="/eflyer">
                     <img src={logo} alt="logo" />
                 </Link>
             </div>

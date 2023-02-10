@@ -8,7 +8,7 @@ const NotFound = () => {
         <Header />
         <div className="inner-banner-section page-404">
             <div className="logo">
-                <a href="">
+                <a href="/eflyer">
                     <img src={logo} alt="logo" />
                 </a>
             </div>
