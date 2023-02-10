@@ -299,6 +299,10 @@ p.carousel-status {
     margin: 25px 1.5%;
 }
 
+.product-title-mobile {
+    display: none;
+}
+
 .product-card h3 {
     font-size: 20px;
     color: #30302e;
@@ -583,6 +587,14 @@ p.carousel-status {
 
     .product-card {
         flex-basis: 97%;
+    }
+
+    .product-title-mobile {
+        display: block;
+    }
+
+    .product-title {
+        display: none;
     }
 
     .product-card img {
