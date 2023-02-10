@@ -315,7 +315,7 @@ p.carousel-status {
     width: 100% !important;
 }
 
-:where(.css-dev-only-do-not-override-j0nf2s).ant-spin .ant-spin-dot-item {
+.ant-spin-dot-item {
     background-color: #d8ac35 !important;
 }
 
