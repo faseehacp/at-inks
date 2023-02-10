@@ -476,6 +476,7 @@ p.carousel-status {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 10px;
+        font-size: 12px;
     }
 
     .mobile-header-bottom {
@@ -503,7 +504,7 @@ p.carousel-status {
     }
 
     .banner-slider button {
-        font-size: 11px;
+        font-size: 12px;
         padding: 7px 20px;
     }
 
@@ -534,7 +535,7 @@ p.carousel-status {
     }
 
     .filter select {
-        padding: 3px 10px;
+        padding: 5px 10px;
     }
 
     .language button {
@@ -613,13 +614,5 @@ p.carousel-status {
         line-height: 26px;
         width: 80%;
         margin-bottom: 0;
-    }
-
-    .banner-slider button {
-        font-size: 10px;
-    }
-
-    .filter select {
-        font-size: 10px;
     }
 }
