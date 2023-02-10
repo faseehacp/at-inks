@@ -5,8 +5,11 @@ const Products = (props) => {
   return (
     <div className='products-section'>
         <div className="container">
-            {props.products.length > 0 && <h2>{props.category}</h2>}
-            <Product products={props.products} />
+          {props.products.length > 0 && <h2>{props.category}</h2>}
+          <Product 
+            products={props.products} 
+            loading={props.loading}
+          />
         </div>
     </div>
   )

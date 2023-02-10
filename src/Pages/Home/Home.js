@@ -8,9 +8,10 @@ function Home() {
   const [productsData, setProductsData] = useState([]);
   const [categoriesData, setCategoriesData] = useState([]);
   const [category, setCategory] = useState("Men & Women Fashion");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    console.log("category::", category);
+    setLoading(true);
     fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
       .then(products => {
@@ -22,13 +23,11 @@ function Home() {
           return ar.indexOf(category) === i
         })
         setCategoriesData(categories)
-        console.log(categories);
+        setLoading(false);
       })
   }, [])
 
   const onCategoriesFilter = (e) => {
-    console.log("category::", category);
-    console.log(e.target.value, productsData);
     setCategory(e.target.value)
     if(e.target.value === 'All Categories') {
       setCategory('Men & Women Fashion');
@@ -44,7 +43,6 @@ function Home() {
   const onSearchHandler = (e) => {
     e.preventDefault();
     setCategory('Men & Women Fashion');
-    console.log("e.target.value", e.target[0].value);
     if(e.target[0].value === "") {
       setProductsData(allProducts);
     } else {
@@ -75,6 +73,7 @@ function Home() {
         category={category}
         onSearch={onSearchHandler}
         onChange={onChangeHandler}
+        loading={loading}
       />
     </div>
   );

@@ -15,6 +15,7 @@ const Main = (props) => {
       <Products
         products={props.products}
         category={props.category}
+        loading={props.loading}
       />
     </div>
   )
