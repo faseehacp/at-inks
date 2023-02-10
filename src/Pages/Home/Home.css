@@ -311,6 +311,14 @@ p.carousel-status {
     padding-bottom: 5px;
 }
 
+.ant-spin-nested-loading {
+    width: 100% !important;
+}
+
+:where(.css-dev-only-do-not-override-j0nf2s).ant-spin .ant-spin-dot-item {
+    background-color: #d8ac35 !important;
+}
+
 .product-card p {
     width: 100%;
     font-size: 16px;
@@ -591,10 +599,6 @@ p.carousel-status {
 
     .product-title-mobile {
         display: block;
-    }
-
-    .ant-spin-nested-loading {
-        width: 100% !important;
     }
 
     .product-title {
